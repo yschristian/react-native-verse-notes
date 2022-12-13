@@ -90,15 +90,16 @@ const styles = StyleSheet.create({
         fontWeight: '600'
     },
     icon: {
-        left: 300,
+        left:234 ,
         top: 0,
         bottom: 0,
-        marginLeft: 15,
+        marginLeft: 7,
     },
     iconContainer: {
         flexDirection: "row",
         marginLeft: 15,
-        marginTop: 35
+        marginTop: 35,
+        top: 0
 
     }
 
