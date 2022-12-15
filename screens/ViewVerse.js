@@ -19,8 +19,10 @@ const ViewVerse = () => {
     const deleteVerse = async (id) => {
         try {
          await axios.delete(`https://react-native-crud-ild2wrqjd-yschristian7-gmailcom.vercel.app/bible/deleteVerse/${id}`)
-        } catch (error) {
-
+         alert('Verse deleted Successfully...')
+        } 
+        catch (error) {
+            
         }
     }
     useEffect(() => {
@@ -65,7 +67,7 @@ const styles = StyleSheet.create({
         marginTop: 15,
         marginBottom: 50,
         backgroundColor: "grey",
-        width: "100%",
+        width: 500,
         height: 200,
         marginHorizontal: 10,
         borderRadius: 20,
@@ -90,10 +92,10 @@ const styles = StyleSheet.create({
         fontWeight: '600'
     },
     icon: {
-        left:234 ,
+        left:220 ,
         top: 0,
         bottom: 0,
-        marginLeft: 7,
+        marginLeft: 12,
     },
     iconContainer: {
         flexDirection: "row",

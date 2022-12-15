@@ -25,9 +25,12 @@ const UpdateVerse = ({route,navigation}) =>{
             await axios.put(`https://react-native-crud-ild2wrqjd-yschristian7-gmailcom.vercel.app/bible/updateVerse/${id}`,
             {title, description, line})
             navigation.navigate("AddVerse")
-            } catch (error) {
+        }
+            
+            catch (error) {
             console.log(error);
         }
+   
     }
 
     return(

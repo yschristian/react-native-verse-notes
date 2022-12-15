@@ -14,6 +14,7 @@ const AddVerse = () =>{
             await axios.post("https://react-native-crud-ild2wrqjd-yschristian7-gmailcom.vercel.app/bible/create",{
                 title,description,line
             })
+            alert('Verse added Successfully...')
         } catch (error) {
             console.log(error);
         }
